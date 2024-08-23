@@ -9,6 +9,7 @@ class Emmy:
         self.window = window
         self.outfile = "recording.wav"
         self.emotion = None
+        self.colour = None
 
         self.label = tk.Label(self.window, text="")
         self.label.pack()  # Must be separate to avoid None
@@ -33,20 +34,26 @@ class Emmy:
         match self.emotion_dict:
             case ["neu"]:
                 self.emotion = "neutral"
+                self.colour = "black"
 
             case ["hap"]:
                 self.emotion = "happy"
+                self.colour = "yellow"
 
             case ["ang"]:
                 self.emotion = "angry"
+                self.colour = "red"
 
             case ["sad"]:
                 self.emotion = "sad"
+                self.colour = "blue"
 
         self.update_emotion()
 
     def update_emotion(self):
-        self.label.config(text=f"Detected emotion: {self.emotion}")
+        self.label.config(
+            text=f"Detected emotion: {self.emotion}", fg=self.colour
+        )
 
     def get_emotion(self):
         return self.emotion
