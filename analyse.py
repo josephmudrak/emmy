@@ -9,4 +9,4 @@ def analyse(outfile):
     )
 
     out_prob, score, index, text_lab = classifier.classify_file(outfile)
-    print(text_lab)
+    return text_lab
