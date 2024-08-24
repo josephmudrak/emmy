@@ -4,6 +4,14 @@ from analyse import analyse
 from record import record
 
 
+def calm_down(cd, i=10):
+    if i > 0:
+        cd.config(text=f"{i}")
+        cd.after(1000, calm_down, cd, i - 1)
+    else:
+        cd.config(text="")
+
+
 class Emmy:
     def __init__(self, window):
         self.window = window
@@ -13,6 +21,9 @@ class Emmy:
 
         self.label = tk.Label(self.window, text="")
         self.label.pack()  # Must be separate to avoid None
+
+        self.countdown = tk.Label(self.window, text="")
+        self.countdown.pack()
 
         self.window.title("EMMY")
 
@@ -50,6 +61,9 @@ class Emmy:
 
         self.update_emotion()
 
+        if self.emotion_dict == ["ang"]:
+            calm_down(self.countdown)
+
     def update_emotion(self):
         self.label.config(
             text=f"Detected emotion: {self.emotion}", fg=self.colour
@@ -60,7 +74,7 @@ class Emmy:
 
 
 window = tk.Tk()
-window.geometry("200x60")
+window.geometry("200x90")
 emmy = Emmy(window)
 
 window.mainloop()
