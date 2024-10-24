@@ -3,7 +3,6 @@
 ## Requirements
 
 - `portaudio`
-- Tkinter is usually installed by default. If it is not, however, install `python3-tkinter` or equivalent.
 
 ## Additional Notes
 
