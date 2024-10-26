@@ -1,6 +1,8 @@
 import sounddevice as sd
 import wavio as wv
 
+from flask import Flask, render_template
+from flask_cors import CORS
 from speechbrain.inference.interfaces import foreign_class
 
 
@@ -26,3 +28,16 @@ def record(frequency, duration, outfile):
 
     # Convert array to audio file
     wv.write(outfile, recording, frequency, sampwidth=2)
+
+
+app = Flask(__name__)
+CORS(app)
+
+
+@app.route("/", methods=["GET", "POST"])
+def get_message():
+    return render_template("index.htm")
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", debug=True, port=3000)
