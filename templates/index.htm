@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMMY Web Interface</title>
+    <link rel="stylesheet" href="/static/styles.css" />
   </head>
   <body>
     <h1>EMMY Web Interface</h1>
-    <div class="btn-container">
-      <button id="rec-start">Start Recording</button>
-      <button id="rec-stop" disabled>Stop Recording</button>
+    <div class="content-wrapper">
+      <div class="btn-container">
+        <button class="rec-start" id="rec-start">Start Recording</button>
+        <button class="rec-stop" id="rec-stop" disabled>Stop Recording</button>
+      </div>
+      <br />
+      <div id="result"></div>
+      <br />
+      <div id="calm-down"></div>
     </div>
-    <div id="result"></div>
     <script src="/static/record.js"></script>
   </body>
 </html>

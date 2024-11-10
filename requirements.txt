@@ -1,6 +1,7 @@
 flask
 flask-cors
 sounddevice==0.5.0
+soundfile
 git+https://github.com/speechbrain/speechbrain.git@develop
 torch==2.5.0
 transformers
