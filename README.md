@@ -2,6 +2,9 @@
 
 ## Requirements
 
+- Python 3.11
+  - **Other versions will not work.**
+  - Use `python3.11 -m pip install -r requirements.txt` to install necessary packages.
 - `portaudio`
 
 ## Additional Notes
