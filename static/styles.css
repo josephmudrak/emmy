@@ -16,14 +16,34 @@ body {
 
 h1 {
   font-weight: 600;
-  text-align: center;
   font-size: 72px;
 }
 
 button,
 div,
+select,
 p {
   font-size: 32px;
+}
+
+.heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heading-wrapper h1 {
+  flex: 1;
+  text-align: center;
+}
+
+.heading-wrapper select {
+  position: absolute;
+  right: 0;
+  border: none;
+  padding: 16px;
+  background-color: #e7dc4b;
 }
 
 .rec-start {

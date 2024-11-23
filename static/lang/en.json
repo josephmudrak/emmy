@@ -1,0 +1,20 @@
+{
+  "title": "EMMY \u2013 Web Interface",
+  "start_recording": "Start Recording",
+  "stop_recording": "Stop Recording",
+  "analysing": "Analysing\u2026",
+  "calm_down": "Please calm down.",
+  "detected_emotion": "Detected emotion:",
+  "neutral": "neutral",
+  "happy": "happy",
+  "angry": "angry",
+  "sad": "sad",
+  "error_processing_audio": "Error processing audio:",
+  "error_accessing_microphone": "Error accessing microphone:",
+  "analysing_file": "Analysing file:",
+  "classification_result": "Classification result:",
+  "no_result_returned": "No result returned in classification",
+  "error_during_classification": "Error during classification:",
+  "no_file_part": "No file part in request",
+  "no_file_selected": "No file selected for uploading"
+}

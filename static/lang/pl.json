@@ -1,0 +1,20 @@
+{
+  "title": "EMMY \u2013 Interfejs sieciowy",
+  "start_recording": "Rozpocznij nagrywanie",
+  "stop_recording": "Zatrzymaj nagrywanie",
+  "analysing": "Trwa analiza\u2026",
+  "calm_down": "Proszę się uspokoić.",
+  "detected_emotion": "Wykryta emocja:",
+  "neutral": "brak wyrazu",
+  "happy": "radość",
+  "angry": "złość",
+  "sad": "smutek",
+  "error_processing_audio": "Błąd przy przetwarzaniu dźwięku:",
+  "error_accessing_microphone": "Błąd przy uzyskiwaniu dostępu do mikrofonu:",
+  "analysing_file": "Trwa analiza pliku:",
+  "classification_result": "Wynik klasyfikacji:",
+  "no_result_returned": "Nie zwrócono wyniku przy klasyfikacji",
+  "error_during_classification": "Błąd przy klasyfikacji:",
+  "no_file_part": "Brak pliku w żądaniu",
+  "no_file_selected": "Nie wybrano pliku do przesłania"
+}

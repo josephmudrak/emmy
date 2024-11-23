@@ -3,21 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMMY Web Interface</title>
+    <title data-i18n-key="title">EMMY Web Interface</title>
     <link rel="stylesheet" href="/static/styles.css" />
   </head>
   <body>
-    <h1>EMMY Web Interface</h1>
+    <div class="heading-wrapper">
+      <h1 data-i18n-key="title">EMMY Web Interface</h1>
+      <select data-i18n-switcher class="locale-switcher">
+        <option value="en">English</option>
+        <option value="pl">Polski</option>
+      </select>
+    </div>
     <div class="content-wrapper">
       <div class="btn-container">
-        <button class="rec-start" id="rec-start">Start Recording</button>
-        <button class="rec-stop" id="rec-stop" disabled>Stop Recording</button>
+        <button
+          class="rec-start"
+          id="rec-start"
+          data-i18n-key="start_recording"
+        >
+          Start Recording
+        </button>
+        <button
+          class="rec-stop"
+          id="rec-stop"
+          data-i18n-key="stop_recording"
+          disabled
+        >
+          Stop Recording
+        </button>
       </div>
       <br />
       <div id="result"></div>
       <br />
       <div id="calm-down"></div>
     </div>
+    <script>
+      const defaultLocale = "{{ locale }}";
+    </script>
     <script src="/static/record.js"></script>
   </body>
 </html>
