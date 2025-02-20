@@ -8,6 +8,11 @@
 - `portaudio`
 - EMMY is **not** compatible with Windows. Please use a Linux or macOS system.
 
+### Build Dependencies
+- C++ compiler
+- CMake
+- Python 3 development headers
+
 ## Additional Notes
 
 - Installing the required PIP packages may fail with an error about insufficient storage space. This is because there are too many temporary files. To fix this, run the following command as root:
