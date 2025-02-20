@@ -6,6 +6,7 @@
   - **Other versions will not work.**
   - Use `python3.11 -m pip install -r requirements.txt` to install necessary packages.
 - `portaudio`
+- EMMY is **not** compatible with Windows. Please use a Linux or macOS system.
 
 ## Additional Notes
 
